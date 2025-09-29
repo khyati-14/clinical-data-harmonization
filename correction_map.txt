@@ -72,7 +72,6 @@ prom:premature rupture of membranes
 n/v/d:nausea vomiting diarrhea
 c-sections:cesarean section
 polyhydram:polyhydramnios
-retractions:retraction
 
 # Common Medication Shorthand
 asa:aspirin

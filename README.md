@@ -11,6 +11,7 @@ A crucial first step is to preprocess both the input data and the target termino
 - **Lowercasing and trimming** whitespace.
 - **Removing irrelevant information** such as dosages, administration routes, and instructions using regular expressions.
 - **Standardizing terminology** by replacing common abbreviations, misspellings, and layman's terms with their correct medical equivalents. This is managed through an external `correction_map.txt` file for easy maintenance.
+- **Lemmatization**: Automatically converting words to their base or dictionary form (e.g., "retractions" becomes "retraction"). This makes the matching process more robust by handling pluralization and other word variations without manual hardcoding.
 - **Filtering out noise** by removing generic, redundant keywords (e.g., "test," "procedure") that do not contribute to the clinical meaning. This is controlled by the `redundant_keywords.txt` file.
 
 ### 2. Two-Stage Matching Algorithm
@@ -43,7 +44,7 @@ This two-stage process combines the speed of TF-IDF for initial filtering with t
 ├── redundant_keywords.txt          # List of non-clinical keywords to remove
 ├── requirements.txt                # Python dependencies
 ├── run.sh                          # Shell script to set up and run the project
-└── demo.ipynb                      # Notebook walkthrough of the solution
+└── demo.py                         # Standalone script demonstrating the core logic
 ```
 
 ## How to Run the Solution
@@ -73,6 +74,12 @@ The `run.sh` script will automatically:
 
 Upon completion, a new file named `Test_output.xlsx` will be created in the directory, containing the original input data with the three new output columns appended.
 
-## Notebook Walkthrough
+## Demo Script
 
-For a detailed, step-by-step demonstration of the core logic, you can explore the `demo.ipynb` Jupyter notebook included in this repository. It provides a clear walkthrough of the data loading, text cleaning, and the two-stage harmonization algorithm with intermediate outputs.
+For a detailed, step-by-step demonstration of the core logic, you can run the `demo.py` script:
+
+```sh
+python3 demo.py
+```
+
+This standalone script will execute the entire harmonization process on the `Test.xlsx` file and save the output, providing a clear example of the engine's functionality from start to finish.

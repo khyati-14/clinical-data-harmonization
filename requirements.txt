@@ -4,3 +4,4 @@ thefuzz
 scikit-learn
 rapidfuzz
 pyarrow
+nltk

@@ -5,6 +5,17 @@ from thefuzz import fuzz
 import re
 import time
 import argparse
+import nltk
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+
+# --- Download NLTK data models ---
+try:
+    nltk.data.find('corpora/wordnet.zip')
+    nltk.data.find('tokenizers/punkt.zip')
+except LookupError:
+    nltk.download('wordnet')
+    nltk.download('punkt')
 
 # --- 1. Load Knowledge Base from External Files ---
 
@@ -34,6 +45,8 @@ def load_redundant_keywords(filepath="redundant_keywords.txt"):
 
 def create_cleaner(correction_map, redundant_keywords):
     """Creates a cleaning function based on the loaded knowledge base."""
+    lemmatizer = WordNetLemmatizer()
+
     def clean_and_standardize(text):
         if not isinstance(text, str): return ""
         text = text.lower().strip()
@@ -52,6 +65,11 @@ def create_cleaner(correction_map, redundant_keywords):
         for word in redundant_keywords:
             text = re.sub(r'\b' + word + r'\b', '', text)
             
+        # Tokenize and Lemmatize the text (as nouns)
+        words = nltk.word_tokenize(text)
+        lemmatized_words = [lemmatizer.lemmatize(w) for w in words]
+        text = " ".join(lemmatized_words)
+
         # Final cleanup
         text = re.sub(r'[^a-z0-9\s]', ' ', text)
         text = re.sub(r'\s+', ' ', text).strip()
