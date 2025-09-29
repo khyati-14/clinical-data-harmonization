@@ -1,0 +1,6 @@
+pandas
+openpyxl
+thefuzz
+scikit-learn
+rapidfuzz
+pyarrow

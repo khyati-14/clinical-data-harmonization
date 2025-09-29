@@ -1,0 +1,118 @@
+# Common Imaging & Procedures
+mri:magnetic resonance imaging
+ct:computed tomography
+us:ultrasound
+cxr:chest x-ray
+ekg:electrocardiogram
+ecg:electrocardiogram
+eeg:electroencephalogram
+abg:arterial blood gas
+lp:lumbar puncture
+i&d:incision and drainage
+cabg:coronary artery bypass graft
+ivf:in vitro fertilization
+iud:intrauterine device
+pcr:polymerase chain reaction
+sono:sonography
+u/s:ultrasound
+heart cath:cardiac catheterization
+stress test:exercise stress test
+angio:angiogram
+colpo:colposcopy
+fasciotomies:fasciotomy
+
+# Common Lab Tests
+cbc:complete blood count
+bmp:basic metabolic panel
+cmp:comprehensive metabolic panel
+lfts:liver function tests
+ua:urinalysis
+hgb:hemoglobin
+hct:hematocrit
+plt:platelets
+wbc:white blood cell
+rbc:red blood cell
+esr:erythrocyte sedimentation rate
+tsh:thyroid stimulating hormone
+ptt:partial thromboplastin time
+pt:prothrombin time
+inr:international normalized ratio
+hba1c:hemoglobin a1c
+hemoglobin alc:hemoglobin a1c
+bun:blood urea nitrogen
+cr:creatinine
+hcg:human chorionic gonadotropin
+leuks:leukocytes
+ck2:creatine kinase
+chco3:hco3 bicarbonate
+preg test u:urine pregnancy test
+
+# Common Diagnoses & Conditions
+dm:diabetes mellitus
+htn:hypertension
+cad:coronary artery disease
+gerd:gastroesophageal reflux disease
+uti:urinary tract infection
+copd:chronic obstructive pulmonary disease
+afib:atrial fibrillation
+pe:pulmonary embolism
+dvt:deep vein thrombosis
+pna:pneumonia
+chf:congestive heart failure
+mi:myocardial infarction
+heart attack:myocardial infarction
+stroke:cerebrovascular accident
+cva:cerebrovascular accident
+pud:peptic ulcer disease
+ibs:irritable bowel syndrome
+hiv:human immunodeficiency virus
+std:sexually transmitted disease
+chd:congenital heart disease
+prom:premature rupture of membranes
+n/v/d:nausea vomiting diarrhea
+c-sections:cesarean section
+polyhydram:polyhydramnios
+retractions:retraction
+
+# Common Medication Shorthand
+asa:aspirin
+apap:acetaminophen
+nsaids:nonsteroidal anti inflammatory drug
+pcn:penicillin
+hctz:hydrochlorothiazide
+ivig:intravenous immunoglobulin
+abx:antibiotics
+chemo:chemotherapy
+tpa:tissue plasminogen activator
+
+# Layman's Terms to Medical Terms
+pink eye:conjunctivitis
+common cold:acute viral rhinitis
+high blood pressure:hypertension
+high cholesterol:hyperlipidemia
+sugar disease:diabetes mellitus
+blood clot in leg:deep vein thrombosis
+blood clot in lung:pulmonary embolism
+acid reflux:gastroesophageal reflux disease
+water pill:diuretic
+pain killer:analgesic
+blood thinner:anticoagulant
+
+# Common Misspellings from your data and others
+phiebotomy:phlebotomy
+transuaginal:transvaginal
+hepistitis:hepatitis
+amniocentess:amniocentesis
+colonescopy:colonoscopy
+triglycerick:triglyceride
+flbrinogen:fibrinogen
+urineculture:urine culture
+hyperglycernia:hyperglycemia
+diabetis:diabetes
+pnuemonia:pneumonia
+artiritis:arthritis
+anemiaa:anemia
+bronkitis:bronchitis
+
+# Brand Names to Generic Procedures/Concepts
+myosure:hysteroscopic myomectomy
